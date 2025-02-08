@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 .card {
     display: grid;
     grid-template-columns: repeat(10, 100px);
@@ -22,8 +21,7 @@
     align-items: center;
     justify-content: center;
     font-size: 40px;
-    /* width: 60px;
-    height: 80px; */
+   
     background-color: blue;
     border: 4px dashed black;
     border-radius: 10px;
@@ -134,26 +132,3 @@
    grid-column: span 2;
    background-color: deepskyblue;
 }
-
-  
-
-  @media (max-width: 1000px) {
-    .card {
-        grid-template-columns: repeat(10, 100px);
-        grid-template-rows: repeat(6, 100px);
-    }
-  
-    .box:nth-child(6),
-    .box:nth-child(12),
-    .box:nth-child(18),
-    .box:nth-child(24) {
-    
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .card {
-      grid-template-columns: 1fr;
-    }
-  }
-  
